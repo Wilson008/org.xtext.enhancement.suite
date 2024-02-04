@@ -159,40 +159,6 @@ public class GrammarGenerator {
 		return ret;
 	}
 	
-//	public static String generateCommonRule_Impl(EClassifier eClassifier) {
-//        if (eClassifier instanceof EClass) {
-//            EClass eClass = (EClass) eClassifier;
-//
-//            StringBuilder ruleBuilder = new StringBuilder();
-//
-//            // 第一行
-//            ruleBuilder.append(eClass.getName()).append(" return ").append(eClass.getName()).append(":").append(System.lineSeparator());
-//            
-//            // 第二行
-//            ruleBuilder.append("    '" + eClass.getName() + "'\n");
-//
-//            // 第三行
-//            ruleBuilder.append("    '{'").append(System.lineSeparator());
-//
-//            // 处理每个属性
-//            for (EStructuralFeature feature : eClass.getEStructuralFeatures()) {
-//            	if (feature instanceof EAttribute) {
-//            		ruleBuilder.append("        ").append(processAttribute(feature)).append(System.lineSeparator());
-//            	}
-//            	else if (feature instanceof EReference) {
-//            		ruleBuilder.append("        ").append(processReference(feature)).append(System.lineSeparator());
-//            	}
-//            }
-//
-//            // 最后一行
-//            ruleBuilder.append("    '}';\n").append(System.lineSeparator());
-//
-//            return ruleBuilder.toString();
-//        }
-//
-//        return null; // 如果不是 EClass 类型，返回 null 或者适当的错误处理
-//    }
-	
 	private static String generateFatherRules(List<String> sons, EClass eClass) {
 		String ret = "";
 		
@@ -283,9 +249,12 @@ public class GrammarGenerator {
 
             // 第三行
             ruleBuilder.append("    '{'").append(System.lineSeparator());
+            
+            List<EStructuralFeature> attributes = collectAttributes(eClass);
 
             // 处理每个属性
-            for (EStructuralFeature feature : eClass.getEStructuralFeatures()) {
+            //for (EStructuralFeature feature : eClass.getEStructuralFeatures()) {
+            for (EStructuralFeature feature : attributes) {
             	if (feature instanceof EAttribute) {
             		ruleBuilder.append("        ").append(processAttribute(feature)).append(System.lineSeparator());
             	}
@@ -301,6 +270,24 @@ public class GrammarGenerator {
         }
 
         return null; // 如果不是 EClass 类型，返回 null 或者适当的错误处理
+    }
+    
+    public static List<EStructuralFeature> collectAttributes(EClass eClass) {
+        List<EStructuralFeature> allAttributes = new ArrayList<>();
+        collectAttributesRecursively(eClass, allAttributes);
+        return allAttributes;
+    }
+    
+    private static void collectAttributesRecursively(EClass eClass, List<EStructuralFeature> allAttributes) {
+        // 处理父类
+        for (EClass superClass : eClass.getESuperTypes()) {
+            collectAttributesRecursively(superClass, allAttributes);
+        }
+
+        // 处理当前类的属性
+        for (EStructuralFeature feature : eClass.getEStructuralFeatures()) {
+            allAttributes.add(feature);
+        }
     }
     
     public static String processAttribute(EStructuralFeature feature) {
