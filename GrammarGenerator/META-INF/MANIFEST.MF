@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GrammarGenerator
+Bundle-SymbolicName: GrammarGenerator
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: GrammarGenerator.jar,
+ eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.emf.ecore_2.26.0.v20220123-0838.jar,
+ eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.emf.common_2.24.0.v20220123-0838.jar
+Automatic-Module-Name: GrammarGenerator
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.emf.grammargenerator
+Require-Bundle: org.eclipse.emf.ecore.xmi,
+ LibraryExample;bundle-version="0.1.0",
+ org.xtext.example.mylib,
+ org.eclipse.core.resources
