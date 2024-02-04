@@ -26,7 +26,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.common.util.EList;
 import java.util.Scanner;
@@ -154,9 +155,42 @@ public class GrammarGenerator {
 	            	ret += generateCommonRule(eClassifier, true);
 	            }
 			}
+			else if (eClassifier instanceof EEnum) {
+				EEnum eEnum = (EEnum) eClassifier;
+				
+				ret += generateRuleForEEnum(eEnum);
+			}
 		}
 		
 		return ret;
+	}
+	
+	private static String generateRuleForEEnum(EEnum eEnum) {		
+		StringBuilder ruleBuilder = new StringBuilder();
+		
+		// first line
+		ruleBuilder.append("enum " + eEnum.getName()).append(" return ").append(eEnum.getName() + ":\n");
+		
+		// second line
+		int literalNum = eEnum.getELiterals().size();
+		
+		if (literalNum == 1)
+			ruleBuilder.append("    " + eEnum.getELiterals().get(0).getName() + " = '").append(eEnum.getELiterals().get(0).getName() + "';\n");
+		else {
+			for (int i = 0; i < literalNum; i++) {
+				if (i == 0) {
+					ruleBuilder.append("    " + eEnum.getELiterals().get(i).getName() + " = '").append(eEnum.getELiterals().get(i).getName() + "'");
+				}
+				else {
+					ruleBuilder.append(" | " + eEnum.getELiterals().get(i).getName() + " = '").append(eEnum.getELiterals().get(i).getName() + "'");
+					
+					if (i == (literalNum - 1))
+						ruleBuilder.append(";\n");
+				}
+			}
+		}
+		
+		return ruleBuilder.toString();
 	}
 	
 	private static String generateFatherRules(List<String> sons, EClass eClass) {
