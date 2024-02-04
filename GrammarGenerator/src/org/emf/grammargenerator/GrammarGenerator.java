@@ -95,8 +95,6 @@ public class GrammarGenerator {
     }
 
 	private static void processEPackage(EPackage ePackage, int depth) {
-        // Print information about the current EPackage
-        printIndent(depth);
         System.out.println("EPackage: " + ePackage.getName());
         
         Scanner scanner = new Scanner(System.in);
@@ -110,12 +108,14 @@ public class GrammarGenerator {
                 break;
             }
             
+            // 一个元模型中可能包含很多元类
             EList<EClassifier> eClassifiers = ePackage.getEClassifiers();
 
+            // 在用户输入根元类之后，要先为根元类创建语法规则
             EClassifier rootClassifier = findClassifierByName(eClassifiers, userInput);
 
             if (rootClassifier != null) {
-            	String rootGrammarRule = generateCommonRule(rootClassifier);
+            	String rootGrammarRule = generateCommonRule(rootClassifier, false);
             	System.out.println("The root grammar rule is: \n" + rootGrammarRule);
             	
             	String fatherRules = generateCommonRules(eClassifiers, rootClassifier.getName());
@@ -147,54 +147,67 @@ public class GrammarGenerator {
 	            List<String> sons = findEClassifiersWithSuperType(eClassifiers, eClass.getName());
 	            
 	            if (sons == null || sons.size() == 0) {
-	            	ret += generateCommonRule(eClassifier);
+	            	ret += generateCommonRule(eClassifier, false);
 	            }
 	            else {
 	            	ret += generateFatherRules(sons, eClass);
+	            	ret += generateCommonRule(eClassifier, true);
 	            }
-	            
-//	            ret += eClass.getName() + " return " + eClass.getName() + ":\n";
-//	            
-//	            if (sons.size() == 1) {
-//	            	ret += "    " + sons.get(0) + ";\n";
-//	            }
-//	            else if (sons.size() > 1) {
-//	            	ret += "    ";
-//	            	
-//	            	for (int j = 0; j < sons.size(); j++) {
-//	            		if (j == 0)
-//	            			ret += sons.get(j);
-//	            		else if (j == (sons.size() - 1))
-//	            			ret += " | " + sons.get(j) + ";\n";
-//	            		else 
-//	            			ret += " | " + sons.get(j);
-//	            	}
-//	            }
-//	            
-//	            ret += "\n";
 			}
 		}
 		
 		return ret;
 	}
 	
-//	private static String generateCommonRule(EClassifier eClassifier) {
-//		String ret = "";
-//		
-//		return ret;
-//	}
+//	public static String generateCommonRule_Impl(EClassifier eClassifier) {
+//        if (eClassifier instanceof EClass) {
+//            EClass eClass = (EClass) eClassifier;
+//
+//            StringBuilder ruleBuilder = new StringBuilder();
+//
+//            // 第一行
+//            ruleBuilder.append(eClass.getName()).append(" return ").append(eClass.getName()).append(":").append(System.lineSeparator());
+//            
+//            // 第二行
+//            ruleBuilder.append("    '" + eClass.getName() + "'\n");
+//
+//            // 第三行
+//            ruleBuilder.append("    '{'").append(System.lineSeparator());
+//
+//            // 处理每个属性
+//            for (EStructuralFeature feature : eClass.getEStructuralFeatures()) {
+//            	if (feature instanceof EAttribute) {
+//            		ruleBuilder.append("        ").append(processAttribute(feature)).append(System.lineSeparator());
+//            	}
+//            	else if (feature instanceof EReference) {
+//            		ruleBuilder.append("        ").append(processReference(feature)).append(System.lineSeparator());
+//            	}
+//            }
+//
+//            // 最后一行
+//            ruleBuilder.append("    '}';\n").append(System.lineSeparator());
+//
+//            return ruleBuilder.toString();
+//        }
+//
+//        return null; // 如果不是 EClass 类型，返回 null 或者适当的错误处理
+//    }
 	
 	private static String generateFatherRules(List<String> sons, EClass eClass) {
 		String ret = "";
 		
 		ret += eClass.getName() + " return " + eClass.getName() + ":\n";
+		
+		if (!eClass.isAbstract()) {
+			ret += "    " + eClass.getName() + "_Impl | ";
+		}
+		else 
+			ret += "    ";
         
         if (sons.size() == 1) {
-        	ret += "    " + sons.get(0) + ";\n";
+        	ret += sons.get(0) + ";\n";
         }
         else if (sons.size() > 1) {
-        	ret += "    ";
-        	
         	for (int j = 0; j < sons.size(); j++) {
         		if (j == 0)
         			ret += sons.get(j);
@@ -209,29 +222,6 @@ public class GrammarGenerator {
         
 		return ret;
 	}
-
-    private static void processEClass(EClass eClass, int depth) {
-//        // Print information about the current EClass
-//        printIndent(depth);
-//        System.out.println("EClass: " + eClass.getName());
-//
-//        // Process attributes
-//        for (EStructuralFeature feature : eClass.getEStructuralFeatures()) {
-//            if (feature instanceof EAttribute) {
-//                printIndent(depth + 1);
-//                System.out.printf("Attribute: %s, EType: %s, Scope: [%d, %d]\n", feature.getName(), ((EAttribute) feature).getEAttributeType().getName(), feature.getLowerBound(), feature.getUpperBound());
-//            } else if (feature instanceof EReference) {
-//                // Handle references if needed
-//                printIndent(depth + 1);
-//                System.out.printf("Reference: %s, ESuperType: %s, isContainment: %b, Scope: [%d, %d]\n", feature.getName(), ((EReference) feature).getEReferenceType().getName(), ((EReference) feature).isContainment(), feature.getLowerBound(), feature.getUpperBound());
-//            }
-//        }
-//
-//        // Recursively process supertypes
-//        for (EClass superClass : eClass.getESuperTypes()) {
-//            processEClass(superClass, depth + 1);
-//        }
-    }
     
     private static EClassifier findClassifierByName(EList<EClassifier> inputList, String name) {
         if (inputList == null || name == null) {
@@ -273,21 +263,20 @@ public class GrammarGenerator {
 
         return filteredList;
     }
-
-    private static void printIndent(int depth) {
-        for (int i = 0; i < depth; i++) {
-            System.out.print("  "); // Adjust the number of spaces for indentation
-        }
-    }
-    
-    public static String generateCommonRule(EClassifier eClassifier) {
+   
+    public static String generateCommonRule(EClassifier eClassifier, Boolean impl) {
         if (eClassifier instanceof EClass) {
             EClass eClass = (EClass) eClassifier;
 
             StringBuilder ruleBuilder = new StringBuilder();
 
-            // 第一行
-            ruleBuilder.append(eClass.getName()).append(" return ").append(eClass.getName()).append(":").append(System.lineSeparator());
+            if (impl)
+            	// 第一行
+                ruleBuilder.append(eClass.getName()+"_Impl").append(" return ").append(eClass.getName()).append(":").append(System.lineSeparator());
+            else
+            	// 第一行
+                ruleBuilder.append(eClass.getName()).append(" return ").append(eClass.getName()).append(":").append(System.lineSeparator());
+            
             
             // 第二行
             ruleBuilder.append("    '" + eClass.getName() + "'\n");
@@ -303,8 +292,6 @@ public class GrammarGenerator {
             	else if (feature instanceof EReference) {
             		ruleBuilder.append("        ").append(processReference(feature)).append(System.lineSeparator());
             	}
-                // 使用空行和两个斜杠代替属性行
-                //ruleBuilder.append("        // TODO: Handle ").append(feature.getName()).append(System.lineSeparator());
             }
 
             // 最后一行
@@ -315,10 +302,6 @@ public class GrammarGenerator {
 
         return null; // 如果不是 EClass 类型，返回 null 或者适当的错误处理
     }
-    
-//    private static String processAttribute(EStructuralFeature feature) {
-//    	return "//attribute...";
-//    }
     
     public static String processAttribute(EStructuralFeature feature) {
         if (feature instanceof EAttribute) {
