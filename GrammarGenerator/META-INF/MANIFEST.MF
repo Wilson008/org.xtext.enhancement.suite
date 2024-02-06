@@ -10,6 +10,12 @@ Automatic-Module-Name: GrammarGenerator
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: org.emf.grammargenerator
 Require-Bundle: org.eclipse.emf.ecore.xmi,
- LibraryExample;bundle-version="0.1.0",
- org.xtext.example.mylib,
- org.eclipse.core.resources
+ org.eclipse.core.resources,
+ org.eclipse.xtext.xtext.wizard,
+ org.eclipse.xtext.xtext.ui,
+ org.eclipse.emf.codegen.ecore,
+ org.eclipse.ui.workbench,
+ org.eclipse.jface,
+ com.google.guava,
+ org.eclipse.xtext.util,
+ org.eclipse.equinox.registry

@@ -21,5 +21,10 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/com.google.inject_7.0.0.jar"/>
 	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext_2.32.0.v20230827-1315.jar"/>
+	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.ui_2.32.0.v20230827-1315.jar"/>
+	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.xtext.wizard_2.32.0.v20230827-1315.jar"/>
+	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.xtext.ui_2.32.0.v20230827-1315.jar"/>
+	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.ui.ide_3.18.500.v20220215-1304.jar"/>
+	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.xbase.lib_2.32.0.v20230827-1315.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

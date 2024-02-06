@@ -12,13 +12,12 @@ import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import java.util.Map;
 import java.io.File;
 import java.io.IOException;
-import library.Library;
-import library.LibraryPackage;
+
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-import org.eclipse.xtext.resource.XtextResource;
-import org.eclipse.xtext.resource.XtextResourceSet;
-import org.xtext.example.mylib.MyLibStandaloneSetup;
+//import org.eclipse.xtext.resource.XtextResource;
+//import org.eclipse.xtext.resource.XtextResourceSet;
+
 import org.eclipse.emf.ecore.EGenericType;
 import com.google.inject.Injector;
 import org.eclipse.emf.ecore.EObject;
@@ -33,6 +32,10 @@ import org.eclipse.emf.common.util.EList;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.eclipse.xtext.xtext.wizard.Ecore2XtextConfiguration;
+import org.eclipse.xtext.xtext.wizard.ecore2xtext.Ecore2XtextExtensions;
+import java.util.Collection;
 
 public class GrammarGenerator {
 
@@ -55,7 +58,8 @@ public class GrammarGenerator {
             // Load the selected Ecore metamodel
             Resource resource = loadEcoreMetamodel(selectedFile.getAbsolutePath());
             
-            GenerateGrammar(resource);
+            //GenerateGrammar(resource);
+            XsdToXtextGenerator.createXtextGrammar(resource);
         }
     }
 
@@ -91,11 +95,12 @@ public class GrammarGenerator {
             EObject rootEObject = resource.getContents().get(0);
 
             // Process the root EObject and its children
-            processEPackage((EPackage) rootEObject, 0);
+            processEPackage((EPackage) rootEObject);
+            //GenerateXtextGrammar.processEPackageNew((EPackage) rootEObject, 0);
         }
     }
 
-	private static void processEPackage(EPackage ePackage, int depth) {
+	private static void processEPackage(EPackage ePackage) {
         System.out.println("EPackage: " + ePackage.getName());
         
         Scanner scanner = new Scanner(System.in);
@@ -135,7 +140,7 @@ public class GrammarGenerator {
         scanner.close();
     }
 	
-	private static String generateCommonRules(EList<EClassifier> eClassifiers, String rootRule) {
+	public static String generateCommonRules(EList<EClassifier> eClassifiers, String rootRule) {
 		String ret = "";
 		
 		for (EClassifier eClassifier : eClassifiers) {
@@ -223,7 +228,7 @@ public class GrammarGenerator {
 		return ret;
 	}
     
-    private static EClassifier findClassifierByName(EList<EClassifier> inputList, String name) {
+    public static EClassifier findClassifierByName(EList<EClassifier> inputList, String name) {
         if (inputList == null || name == null) {
             return null;
         }
