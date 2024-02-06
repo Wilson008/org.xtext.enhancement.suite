@@ -36,11 +36,19 @@ import java.util.List;
 import org.eclipse.xtext.xtext.wizard.Ecore2XtextConfiguration;
 import org.eclipse.xtext.xtext.wizard.ecore2xtext.Ecore2XtextExtensions;
 import java.util.Collection;
+import org.eclipse.core.commands.AbstractHandler;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
 
-public class GrammarGenerator {
+public class GrammarGenerator extends AbstractHandler {
 
 	public static void main(String[] args) {
-        // Create a file chooser
+		GrammarGenerator gg = new GrammarGenerator();
+		gg.MainProc();
+    }
+	
+	public void MainProc() {
+		// Create a file chooser
         JFileChooser fileChooser = new JFileChooser();
         
         // Set the file filter to show only .ecore files
@@ -61,7 +69,7 @@ public class GrammarGenerator {
             //GenerateGrammar(resource);
             XsdToXtextGenerator.createXtextGrammar(resource);
         }
-    }
+	}
 
 	private static Resource loadEcoreMetamodel(String filePath) {
         try {
@@ -422,4 +430,11 @@ public class GrammarGenerator {
 
         return false;
     }
+
+	@Override
+	public Object execute(ExecutionEvent event) throws ExecutionException {
+		// TODO Auto-generated method stub
+		MainProc();
+		return null;
+	}
 }

@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: GrammarGenerator
-Bundle-SymbolicName: GrammarGenerator
+Bundle-SymbolicName: GrammarGenerator;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: GrammarGenerator.jar,
  eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.emf.ecore_2.26.0.v20220123-0838.jar,

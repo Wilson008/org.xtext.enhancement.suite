@@ -41,6 +41,8 @@ import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.codegen.ecore.genmodel.GenPackage;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.codegen.ecore.genmodel.GenModel;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * HOW TO EXECUTE XSD TO XTEXT TRANSFORMATION:

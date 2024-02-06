@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <!-- added on 2024-02-06 -->
+	<extension point="org.eclipse.ui.commands">
+      	<command
+			id="org.emf.grammargenerator.grammargenerator"
+            name="CreateXtextGrammar">
+      	</command>
+    </extension>
+   <!-- added on 2024-02-06 -->
+   <extension point="org.eclipse.ui.handlers">
+      	<handler
+            class="org.emf.grammargenerator.GrammarGenerator"
+            commandId="org.emf.grammargenerator.grammargenerator">
+      	</handler>
+    </extension>
+   <!-- added on 2024-02-06 -->
+	<extension point="org.eclipse.ui.menus">
+  		<menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=help">
+     		<menu
+           		label="Ecore2Xtext">
+	        	<command
+	              	commandId="org.emf.grammargenerator.grammargenerator"
+	              	label="GenerateXtextGrammar"
+	              	style="push">
+	        	</command>
+     		</menu>
+  		</menuContribution>
+	</extension>
+</plugin>
