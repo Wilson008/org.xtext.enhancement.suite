@@ -18,4 +18,5 @@ Require-Bundle: org.eclipse.emf.ecore.xmi,
  org.eclipse.jface,
  com.google.guava,
  org.eclipse.xtext.util,
- org.eclipse.equinox.registry
+ org.eclipse.equinox.registry,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.32.0"
