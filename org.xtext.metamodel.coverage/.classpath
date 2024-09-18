@@ -1,0 +1,1735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-22">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/com.google.inject.assistedinject_7.0.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/com.google.inject_7.0.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ant.source_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ant_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.admin.source_4.4.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.admin_4.4.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.common.source_4.22.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.common_4.22.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.compare.source_4.7.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.compare_4.7.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.doc_4.2.11.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ecore.dependencies.source_1.0.4.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ecore.dependencies_1.0.4.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.edit.source_4.6.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.edit_4.6.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.examples.installer_4.3.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.explorer.source_4.14.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.explorer.ui.source_4.7.12.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.explorer.ui_4.7.12.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.explorer_4.14.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.expressions.edit.source_4.4.2.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.expressions.edit_4.4.2.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.expressions.source_4.4.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.expressions_4.4.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.lm.modules_1.0.2.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.lm.server.source_1.3.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.lm.server_1.3.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.lm_1.2.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.migrator.source_3.4.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.migrator_3.4.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.net4j.source_4.6.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.net4j_4.6.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.sdk.source_4.1.605.v20231122-0952.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.sdk_4.1.605.v20231122-0952.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.security.edit.source_4.6.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.security.edit_4.6.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.security.source_4.7.2.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.security.ui.source_4.5.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.security.ui_4.5.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.security_4.7.2.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.admin.source_4.4.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.admin_4.4.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.db.source_4.13.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.db_4.13.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.embedded.source_4.10.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.embedded_4.10.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.net4j.source_4.7.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.net4j_4.7.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.ocl.source_4.5.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.ocl_4.5.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.product.source_4.2.8.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.product_4.2.8.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.security.source_4.11.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.security_4.11.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server.source_4.20.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.server_4.20.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.source_4.24.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.repository.source_4.3.5.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.repository_4.3.5.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.source_4.4.6.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.ui.source_4.5.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.ui_4.5.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.workspace.source_4.4.4.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.workspace.ui.source_4.4.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.workspace.ui_4.4.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer.workspace_4.4.4.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.transfer_4.4.6.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.admin.source_4.3.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.admin_4.3.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.compare.source_4.8.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.compare_4.8.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.jdt.source_1.0.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.jdt_1.0.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.shared.source_4.9.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.shared_4.9.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.source_4.16.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.team.source_4.4.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui.team_4.4.3.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.ui_4.16.1.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.workspace.source_4.4.5.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo.workspace_4.4.5.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cdo_4.24.0.v20240605-1049.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.cheatsheets_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen.ecore.source_2.38.0.v20240314-1003.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen.ecore.ui.source_2.38.0.v20240314-1003.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen.ecore.ui_2.38.0.v20240314-1003.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen.ecore_2.38.0.v20240314-1003.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen.source_2.23.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen.ui.source_2.24.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen.ui_2.24.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.codegen_2.23.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.common.source_2.30.0.v20240314-0928.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.common.ui.source_2.22.0.v20231002-1020.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.common.ui_2.18.0.v20190507-0402.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.common.ui_2.22.0.v20231002-1020.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.common_2.22.0.v20210319-0732.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.common_2.30.0.v20240314-0928.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.diagram.edit_2.5.2.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.diagram.ide.ui.sirius.source_1.1.1.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.diagram.ide.ui.sirius_1.1.1.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.diagram.ide.ui_3.4.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.diagram.sirius.source_1.1.0.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.diagram.sirius_1.1.0.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.diagram_2.5.2.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.doc_3.3.24.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.edit.source_4.3.1.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.edit_4.3.1.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.egit.ui_1.1.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.egit_1.2.4.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.ide.source_3.4.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.ide.ui.source_4.4.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.ide.ui_4.4.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.ide_3.4.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.rcp.ui_4.4.2.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.rcp_2.5.2.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare.source_3.5.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.compare_3.5.3.202401051648.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.converter.source_2.13.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.converter_2.13.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.databinding.edit.source_1.9.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.databinding.edit_1.7.0.v20210113-0340.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.databinding.edit_1.9.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.databinding.source_1.8.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.databinding_1.5.0.v20180706-1146.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.databinding_1.8.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.doc_2.31.0.v20230828-0744.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.change.edit.source_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.change.edit_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.change.source_2.16.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.change_2.14.0.v20190528-0725.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.change_2.16.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.edit.source_2.14.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.edit_2.13.0.v20190822-1451.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.edit_2.14.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.editor.source_2.18.0.v20230224-1122.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.editor_2.18.0.v20230224-1122.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.source_2.36.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.xmi.source_2.37.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.xmi_2.16.0.v20190528-0725.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore.xmi_2.37.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore_2.24.0.v20210405-0628.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecore_2.36.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecoretools.design.ui_3.5.1.202404261351.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecoretools.design_3.5.1.202404261351.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecoretools.doc_3.5.1.202404261351.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecoretools.ui_3.5.1.202404261351.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.ecoretools_3.5.1.202404261351.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.edit.source_2.21.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.edit.ui.source_2.23.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.edit.ui_2.20.0.v20210506-1232.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.edit.ui_2.23.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.edit_2.16.0.v20190920-0401.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.edit_2.21.0.v20231208-1346.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.example.installer_1.11.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.exporter.source_2.12.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.exporter_2.12.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer.ecore.source_2.11.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer.ecore_2.11.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer.java.source_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer.java_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer.rose.source_2.13.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer.rose_2.13.0.v20240203-0859.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer.source_2.13.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.importer_2.13.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore.editor.source_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore.editor_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore.source_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2ecore.editor.source_2.11.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2ecore.editor_2.11.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2ecore.source_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2ecore_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2xml.source_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2xml.ui.source_2.13.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2xml.ui_2.13.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ecore2xml_2.12.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.source_2.13.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ui.source_2.11.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.ui_2.11.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.xsd2ecore.editor.source_2.10.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.xsd2ecore.editor_2.10.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.xsd2ecore.source_2.10.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping.xsd2ecore_2.10.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mapping_2.13.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe.core_1.12.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe.utils_1.12.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.language.ide.source_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.language.ide_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.language.source_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.language.ui.source_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.language.ui_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.language_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.launch.source_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.launch.ui.source_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.launch.ui_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.launch_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.lib.source_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.lib_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.runtime.source_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.mwe2.runtime_2.18.0.v20240525-1058.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.cdo.common.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.cdo.common_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.cdo_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.common.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.common_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.doc.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.doc_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl.additional.builder.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl.additional.builder_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl.ide.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl.ide_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl.ui.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl.ui_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.dsl_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.editors.common.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.editors.common_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.editors_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.generator.common.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.generator.common_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.junit4.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.junit4_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.runtime.common.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.runtime.common_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.runtime_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.ui.examples.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.ui.examples_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.views.common.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.views.common_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.views.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.views_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.wizards.source_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley.wizards_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.parsley_1.17.0.v20240529-1037.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.source_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.transaction.doc_1.4.1.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.transaction.examples_1.3.0.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.transaction.source_1.9.2.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.transaction.ui.source_1.4.1.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.transaction.ui_1.4.1.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.transaction_1.9.2.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.doc_1.4.0.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.examples_1.3.2.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.ocl.source_1.4.2.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.ocl_1.4.2.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.source_1.8.3.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.ui.ide.source_1.3.2.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.ui.ide_1.3.2.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.ui.source_1.7.3.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation.ui_1.7.3.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.validation_1.8.3.202305230712.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.workspace.doc_1.3.1.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.workspace.source_1.5.2.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.workspace.ui.source_1.3.1.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.workspace.ui_1.3.1.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf.workspace_1.5.2.202208110935.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.emf_2.9.0.v20230211-1150.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.activities.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.activities_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.builder.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.builder.standalone.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.builder.standalone_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.builder_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.buildship.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.buildship_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.edit.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.edit_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.shared.jdt38.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.shared.jdt38_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.shared.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.shared_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.ui.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types.ui_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.common.types_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.doc_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ecore.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ecore_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ide.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ide_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.java.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.java_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.junit4.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.junit4_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.logging.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.logging_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.m2e.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.m2e_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.purexbase.ide.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.purexbase.ide_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.purexbase.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.purexbase.ui.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.purexbase.ui_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.purexbase_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.smap.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.smap_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.testing.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.testing_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codemining.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codemining_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codetemplates.ide.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codetemplates.ide_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codetemplates.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codetemplates.ui.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codetemplates.ui_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.codetemplates_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.ecore.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.ecore_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.shared.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.shared_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.testing.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui.testing_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.ui_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.util.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.util_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.ide.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.ide_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.junit.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.junit_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.lib.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.lib_2.25.0.v20210301-0821.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.lib_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.testing.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.testing_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.ui.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.ui.testing.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.ui.testing_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase.ui_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xbase_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.generator.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.generator_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.ide.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.ide_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.ui.examples_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.ui.graph.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.ui.graph_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.ui.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.ui_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.wizard.source_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext.xtext.wizard_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metamodel.coverage/libs/org.eclipse.xtext_2.35.0.v20240528-1523.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/uniandes.automat.sql">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
