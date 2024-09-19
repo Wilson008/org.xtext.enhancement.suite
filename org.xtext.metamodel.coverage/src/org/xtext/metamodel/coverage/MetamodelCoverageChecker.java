@@ -21,14 +21,19 @@ import java.util.stream.Collectors;
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
         // 绝对路径设置
-        String dslFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\examples\\example.dsl";
-        String ecoreFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\Gramatica\\uniandes.automat.sql\\model\\generated\\Metamodel.ecore";
+        String dslFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\SegundaInstancia\\generador.sql";
+        String ecoreFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\Gramatica\\uniandes.automat.sql\\model\\generated\\Sql.ecore";
 
         // 1. 使用Xtext生成的Injector解析DSL文件
-        Injector injector = new SqlStandaloneSetup().createInjectorAndDoEMFRegistration();
-        XtextResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
+//        Injector injector = new SqlStandaloneSetup().createInjectorAndDoEMFRegistration();
+        SqlStandaloneSetup.doSetup();
+        XtextResourceSet resourceSet = new XtextResourceSet();
+
+//        XtextResourceSet resourceSet = injector.getInstance(XtextResourceSet.class);
 
         // 2. 加载DSL文件
+//        Resource dslResource = resourceSet.getResource(URI.createFileURI(dslFilePath), true);
+//        EObject dslModel = dslResource.getContents().get(0);
         Resource dslResource = resourceSet.getResource(URI.createFileURI(dslFilePath), true);
         EObject dslModel = dslResource.getContents().get(0);
 
@@ -45,7 +50,7 @@ public class MetamodelCoverageChecker {
             System.out.println("Instance uses EClass: " + eClass.getName());
         }
 
-     // 5. 获取Ecore模型中的所有类
+        // 5. 获取Ecore模型中的所有类
         List<EClassifier> ecoreClassifiers = ePackage.getEClassifiers();
         List<EClass> ecoreClasses = ecoreClassifiers.stream()
                 .filter(EClass.class::isInstance) // 过滤EClassifier中的EClass
