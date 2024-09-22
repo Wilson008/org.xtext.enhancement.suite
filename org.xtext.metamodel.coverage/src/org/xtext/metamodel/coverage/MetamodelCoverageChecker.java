@@ -49,6 +49,8 @@ public class MetamodelCoverageChecker {
         System.out.println("Instance types");
         // 存储唯一的EClass名
         Set<String> uniqueTypeNames = new HashSet<>();
+        EClass rootEClass = dslModel.eClass();
+        uniqueTypeNames.add(rootEClass.getName());
         for (Iterator<EObject> it = dslModel.eAllContents(); it.hasNext(); ) {
             EObject eObject = it.next();
             EClass eClass = eObject.eClass();
@@ -56,6 +58,15 @@ public class MetamodelCoverageChecker {
             uniqueTypeNames.add(eClass.getName());
             
             System.out.println(eClass.getName());
+            
+            // 检查 EClass 中的 EStructuralFeatures，寻找 EEnum 类型
+            eClass.getEAllStructuralFeatures().forEach(feature -> {
+                if (feature.getEType() instanceof EEnum) {
+                    EEnum eEnum = (EEnum) feature.getEType();
+                    uniqueTypeNames.add(eEnum.getName());
+                    System.out.println("EEnum type: " + eEnum.getName());
+                }
+            });
         }
         
         WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, "types_used_in_instances.txt");
