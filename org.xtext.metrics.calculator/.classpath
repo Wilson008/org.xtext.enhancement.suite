@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/uniandes.automat.sql"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -103,5 +102,7 @@
 	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.wizard.source_2.35.0.v20240528-1523.jar"/>
 	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.wizard_2.35.0.v20240528-1523.jar"/>
 	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext_2.35.0.v20240528-1523.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/uniandes.automat.sql"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.xtext.complementary.helper"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -5,3 +5,17 @@ Database
 DataType
 PrimaryKey
 ForeignKey
+Table
+Column
+Model
+Database
+DataType
+PrimaryKey
+ForeignKey
+Table
+Column
+Model
+Database
+DataType
+PrimaryKey
+ForeignKey

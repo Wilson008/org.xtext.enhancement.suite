@@ -1,6 +1,5 @@
 package org.xtext.metamodel.coverage;
 
-import com.google.inject.Injector;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
@@ -11,21 +10,29 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
 import uniandes.automat.sql.*;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Set;
-import java.util.Enumeration;
 import java.util.HashSet;
-import org.eclipse.xtext.nodemodel.ICompositeNode;
-import org.eclipse.xtext.nodemodel.INode;
 import org.eclipse.emf.ecore.EEnum;
+import org.xtext.complementary.helper.*;
+
 
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
+		String repoPath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java";
+		String[] ecoreExtensions = {"ecore"};
+		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtensions(repoPath, ecoreExtensions);
+		
+		String[] xtextExtensions = {"xtext"};
+		List<String> listXtextFiles = FileHelper.listFileNamesWithExtensions(repoPath, xtextExtensions);
+		
+		String[] insExtensions = {"sql"};
+		List<String> listInstances = FileHelper.listFileNamesWithExtensions(repoPath, insExtensions);
+		
         // 绝对路径设置
         String dslFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\SegundaInstancia\\generador.sql";
         String ecoreFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\Gramatica\\uniandes.automat.sql\\model\\generated\\Sql.ecore";
@@ -35,7 +42,10 @@ public class MetamodelCoverageChecker {
 
         // 5. 获取Ecore模型中的所有类
         getClassesFromSingleMM(ecoreFilePath);
+        
+        
     }
+	
 	
 	public static void getTypesFromSingleIns(String dslFilePath) {
 		// 1. 使用Xtext生成的Injector解析DSL文件
