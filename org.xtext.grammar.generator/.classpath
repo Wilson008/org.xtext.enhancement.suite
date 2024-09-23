@@ -6,25 +6,20 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.emf.ecore_2.26.0.v20220123-0838.jar"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.emf.common_2.24.0.v20220123-0838.jar" sourcepath="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.emf.common.source_2.24.0.v20220123-0838.jar">
-		<accessrules>
-			<accessrule kind="accessible" pattern="org/eclipse/emf/common/*"/>
-			<accessrule kind="accessible" pattern="org/eclipse/emf/common/archive/*"/>
-			<accessrule kind="accessible" pattern="org/eclipse/emf/common/command/*"/>
-			<accessrule kind="accessible" pattern="org/eclipse/emf/common/notify/*"/>
-			<accessrule kind="accessible" pattern="org/eclipse/emf/common/notify/impl/*"/>
-			<accessrule kind="accessible" pattern="org/eclipse/emf/common/util/*"/>
-			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
-		</accessrules>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/com.google.inject_7.0.0.jar"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext_2.32.0.v20230827-1315.jar"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.ui_2.32.0.v20230827-1315.jar"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.xtext.wizard_2.32.0.v20230827-1315.jar"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.xtext.ui_2.32.0.v20230827-1315.jar"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.ui.ide_3.18.500.v20220215-1304.jar"/>
-	<classpathentry kind="lib" path="D:/01.Software/eclipse/eclipse-modeling-2022-03/plugins/org.eclipse.xtext.xbase.lib_2.32.0.v20230827-1315.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/com.google.inject_7.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.emf.common_2.22.0.v20210319-0732.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.emf.common_2.30.0.v20240314-0928.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.emf.ecore_2.24.0.v20210405-0628.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.emf.ecore_2.36.0.v20240203-0859.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.ui.ide_3.18.200.v20210523-1724.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.ui.ide_3.22.200.v20240524-2010.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.xtext.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.xtext.xbase.lib_2.25.0.v20210301-0821.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.xtext.xbase.lib_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.xtext.xbase_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.xtext.xtext.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.xtext.xtext.wizard_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.grammar.generator/lib/org.eclipse.xtext_2.35.0.v20240528-1523.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

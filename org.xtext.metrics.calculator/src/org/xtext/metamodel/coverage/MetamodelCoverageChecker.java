@@ -30,23 +30,23 @@ public class MetamodelCoverageChecker {
         String dslFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\SegundaInstancia\\generador.sql";
         String ecoreFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\Gramatica\\uniandes.automat.sql\\model\\generated\\Sql.ecore";
 
-        // 1. 使用Xtext生成的Injector解析DSL文件
+        // 4. 遍历DSL实例，获取使用的元模型类
+        getTypesFromSingleIns(dslFilePath);
+
+        // 5. 获取Ecore模型中的所有类
+        getClassesFromSingleMM(ecoreFilePath);
+    }
+	
+	public static void getTypesFromSingleIns(String dslFilePath) {
+		// 1. 使用Xtext生成的Injector解析DSL文件
         SqlStandaloneSetup.doSetup();
         XtextResourceSet resourceSet = new XtextResourceSet();
-
-        // 2. 加载DSL文件
+        
+		// 2. 加载DSL文件
         Resource dslResource = resourceSet.getResource(URI.createFileURI(dslFilePath), true);
         EObject dslModel = dslResource.getContents().get(0);
         
-
-        // 3. 加载Ecore元模型
-        ResourceSet ecoreResourceSet = new ResourceSetImpl();
-        ecoreResourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
-        Resource ecoreResource = ecoreResourceSet.getResource(URI.createFileURI(ecoreFilePath), true);
-        EPackage ePackage = (EPackage) ecoreResource.getContents().get(0);
-
-        // 4. 遍历DSL实例，获取使用的元模型类
-        System.out.println("Instance types");
+		System.out.println("Instance types");
         // 存储唯一的EClass名
         Set<String> uniqueTypeNames = new HashSet<>();
         EClass rootEClass = dslModel.eClass();
@@ -70,9 +70,16 @@ public class MetamodelCoverageChecker {
         }
         
         WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, "types_used_in_instances.txt");
-
-        // 5. 获取Ecore模型中的所有类
-        List<EClassifier> ecoreClassifiers = ePackage.getEClassifiers();
+	}
+	
+	public static void getClassesFromSingleMM(String ecoreFilePath) {
+		// 3. 加载Ecore元模型
+        ResourceSet ecoreResourceSet = new ResourceSetImpl();
+        ecoreResourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
+        Resource ecoreResource = ecoreResourceSet.getResource(URI.createFileURI(ecoreFilePath), true);
+        EPackage ePackage = (EPackage) ecoreResource.getContents().get(0);
+        
+		List<EClassifier> ecoreClassifiers = ePackage.getEClassifiers();
         
         List<EClass> ecoreClasses = ecoreClassifiers.stream()
                 .filter(EClass.class::isInstance) // 过滤EClassifier中的EClass
@@ -99,5 +106,5 @@ public class MetamodelCoverageChecker {
         }
         
         WriteToFile.appendUniqueNamesToFile(uniqueClassNames, "classes_in_metamodel.txt");
-    }
+	}
 }

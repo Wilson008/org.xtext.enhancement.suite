@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.xtext.metamodel.coverage</name>
+	<name>org.xtext.metrics.calculator</name>
 	<comment></comment>
 	<projects>
 	</projects>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/uniandes.automat.sql"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/com.google.inject.assistedinject_7.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/com.google.inject_7.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.emf.common_2.22.0.v20210319-0732.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.emf.common_2.30.0.v20240314-0928.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.emf.ecore.xmi_2.16.0.v20190528-0725.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.emf.ecore.xmi_2.37.0.v20231208-1346.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.emf.ecore_2.24.0.v20210405-0628.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.emf.ecore_2.36.0.v20240203-0859.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.emf_2.9.0.v20230211-1150.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.activities.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.activities_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.builder.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.builder.standalone.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.builder.standalone_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.builder_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.buildship.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.buildship_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.edit.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.edit_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.shared.jdt38.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.shared.jdt38_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.shared.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.shared_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.ui.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.common.types_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.doc_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ecore.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ecore_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ide.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ide_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.java.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.java_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.junit4.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.junit4_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.logging.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.logging_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.m2e.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.m2e_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.purexbase.ide.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.purexbase.ide_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.purexbase.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.purexbase.ui.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.purexbase.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.purexbase_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.smap.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.smap_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.testing.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.testing_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codemining.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codemining_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codetemplates.ide.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codetemplates.ide_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codetemplates.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codetemplates.ui.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codetemplates.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.codetemplates_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.ecore.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.ecore_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.shared.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.shared_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.testing.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui.testing_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.util.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.util_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.ide.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.ide_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.junit.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.junit_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.lib.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.lib_2.25.0.v20210301-0821.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.lib_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.testing.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.testing_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.ui.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.ui.testing.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.ui.testing_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xbase_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.generator.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.generator_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.ide.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.ide_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.ui.examples_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.ui.graph.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.ui.graph_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.ui.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.ui_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.wizard.source_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.wizard_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext_2.35.0.v20240528-1523.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
