@@ -37,17 +37,21 @@ public class MetamodelCoverageChecker {
         String dslFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\SegundaInstancia\\generador.sql";
         String ecoreFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\Gramatica\\uniandes.automat.sql\\model\\generated\\Sql.ecore";
 
-        // 4. 遍历DSL实例，获取使用的元模型类
-        getTypesFromSingleIns(dslFilePath);
-
-        // 5. 获取Ecore模型中的所有类
-        getClassesFromSingleMM(ecoreFilePath);
+        for (int i = 0; i < listEcoreFiles.size(); i++) {
+        	String fileName = "classes_in_ecore_" + String.valueOf(i) + ".txt";
+        	getClassesFromSingleMM(listEcoreFiles.get(i), fileName);
+        }
         
-        
+        for (int i = 0; i < listInstances.size(); i++) {
+        	String fileName = "types_in_" 
+        			+ FileHelper.getFileNameWithExtension(listInstances.get(i))
+        			+ "_" + String.valueOf(i) 
+        			+ ".txt";
+        	getTypesFromSingleIns(listInstances.get(i), fileName);
+        }
     }
 	
-	
-	public static void getTypesFromSingleIns(String dslFilePath) {
+	public static void getTypesFromSingleIns(String dslFilePath, String saveFileName) {
 		// 1. 使用Xtext生成的Injector解析DSL文件
         SqlStandaloneSetup.doSetup();
         XtextResourceSet resourceSet = new XtextResourceSet();
@@ -79,10 +83,10 @@ public class MetamodelCoverageChecker {
             });
         }
         
-        WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, "types_used_in_instances.txt");
+        WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, saveFileName);
 	}
 	
-	public static void getClassesFromSingleMM(String ecoreFilePath) {
+	public static void getClassesFromSingleMM(String ecoreFilePath, String saveFileName) {
 		// 3. 加载Ecore元模型
         ResourceSet ecoreResourceSet = new ResourceSetImpl();
         ecoreResourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new XMIResourceFactoryImpl());
@@ -115,6 +119,6 @@ public class MetamodelCoverageChecker {
         	System.out.println(eEnum.getName());
         }
         
-        WriteToFile.appendUniqueNamesToFile(uniqueClassNames, "classes_in_metamodel.txt");
+        WriteToFile.appendUniqueNamesToFile(uniqueClassNames, saveFileName);
 	}
 }

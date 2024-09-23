@@ -59,4 +59,18 @@ public class FileHelper {
         
         return listFileNames;
     }
+	
+	public static String getFileNameWithoutExtension(String fileName) {
+		// 去掉扩展名（找到最后一个"."的位置并截取）
+        int dotIndex = fileName.lastIndexOf('.');
+        String fileNameWithoutExtension = 
+        		(dotIndex == -1) ? fileName : fileName.substring(0, dotIndex);
+        return fileNameWithoutExtension;
+	}
+	
+	public static String getFileNameWithExtension(String fileName) {
+		// 获取文件名（带扩展名）
+        File file = new File(fileName);
+        return file.getName(); 
+	}
 }
