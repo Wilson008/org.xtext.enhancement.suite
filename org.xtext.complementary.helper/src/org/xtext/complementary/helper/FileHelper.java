@@ -3,6 +3,9 @@ package org.xtext.complementary.helper;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class FileHelper {
 	/**
@@ -73,4 +76,21 @@ public class FileHelper {
         File file = new File(fileName);
         return file.getName(); 
 	}
+	
+	/**
+     * 读取给定文件的内容，并将其存储在一个字符串中
+     * @param filePath 文本文件的绝对路径
+     * @return 返回文件内容的字符串形式
+     */
+    public static String readFileContent(String filePath) {
+        String strRaw = "";
+        try {
+            // 读取文件的所有内容并存储到字符串中
+            strRaw = new String(Files.readAllBytes(Paths.get(filePath)));
+        } catch (IOException e) {
+            // 捕获异常，打印错误信息
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+        return strRaw;
+    }
 }

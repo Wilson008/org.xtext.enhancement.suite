@@ -37,15 +37,32 @@ public class MetamodelCoverageChecker {
         String dslFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\SegundaInstancia\\generador.sql";
         String ecoreFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\Gramatica\\uniandes.automat.sql\\model\\generated\\Sql.ecore";
 
-        for (int i = 0; i < listEcoreFiles.size(); i++) {
-        	String fileName = "classes_in_ecore_" + String.valueOf(i) + ".txt";
+        // get class names from the metamodels
+        for (int i = 0; i < listEcoreFiles.size(); i++) {       	
+        	String fileName = "classes_in_" 
+        			+ FileHelper.getFileNameWithExtension(listEcoreFiles.get(i))
+        			+ "_" 
+        			+ String.valueOf(i) 
+        			+ ".txt";
         	getClassesFromSingleMM(listEcoreFiles.get(i), fileName);
         }
         
+        // get grammar rule names from the grammars
+        for (int i = 0; i < listXtextFiles.size(); i++) {
+        	String fileName = "grammar_rules_in_" 
+        			+ FileHelper.getFileNameWithExtension(listXtextFiles.get(i))
+        			+ "_" 
+        			+ String.valueOf(i) 
+        			+ ".txt";
+        	getRuleNamesFromSingleGrammar(listXtextFiles.get(i), fileName);
+        }
+        
+        // get object types from the instances
         for (int i = 0; i < listInstances.size(); i++) {
         	String fileName = "types_in_" 
         			+ FileHelper.getFileNameWithExtension(listInstances.get(i))
-        			+ "_" + String.valueOf(i) 
+        			+ "_" 
+        			+ String.valueOf(i) 
         			+ ".txt";
         	getTypesFromSingleIns(listInstances.get(i), fileName);
         }
@@ -84,6 +101,12 @@ public class MetamodelCoverageChecker {
         }
         
         WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, saveFileName);
+	}
+	
+	public static void getRuleNamesFromSingleGrammar(String xtextFilePath, String saveFileName) {
+		String strRaw = FileHelper.readFileContent(xtextFilePath);
+		Set<String> uniqueTypeNames = GrammarHelper.getAllGrammarRuleNames(strRaw);
+		WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, saveFileName);
 	}
 	
 	public static void getClassesFromSingleMM(String ecoreFilePath, String saveFileName) {

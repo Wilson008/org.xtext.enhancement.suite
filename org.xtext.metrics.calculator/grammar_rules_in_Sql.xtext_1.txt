@@ -1,0 +1,7 @@
+Table
+Column
+Model
+Database
+PrimaryKey
+DataType
+ForeignKey
