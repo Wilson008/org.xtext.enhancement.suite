@@ -23,7 +23,7 @@ import org.xtext.complementary.helper.*;
 
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
-		String repoPath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java";
+		String repoPath = "E:\\xtext_repos_clone_new\\preesm_ripacola-xtext";
 		String[] ecoreExtensions = {"ecore"};
 		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtensions(repoPath, ecoreExtensions);
 		
@@ -32,10 +32,6 @@ public class MetamodelCoverageChecker {
 		
 		String[] insExtensions = {"sql"};
 		List<String> listInstances = FileHelper.listFileNamesWithExtensions(repoPath, insExtensions);
-		
-        // 绝对路径设置
-        String dslFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\SegundaInstancia\\generador.sql";
-        String ecoreFilePath = "E:\\xtext_repos_modified\\MISO4202_xtext-egl-sql2java\\Gramatica\\uniandes.automat.sql\\model\\generated\\Sql.ecore";
 
         // get class names from the metamodels
         for (int i = 0; i < listEcoreFiles.size(); i++) {       	
