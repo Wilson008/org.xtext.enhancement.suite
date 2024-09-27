@@ -103,8 +103,6 @@
 	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext.xtext.wizard_2.35.0.v20240528-1523.jar"/>
 	<classpathentry kind="lib" path="D:/02.Git Repository/org.xtext.enhancement.suite/org.xtext.metrics.calculator/libs/org.eclipse.xtext_2.35.0.v20240528-1523.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.xtext.complementary.helper"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/es.udima.cesarlaso.tfm"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/es.udima.cesarlaso.tfm.dsl"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/es.udima.cesarlaso.tfm.dsl2"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.xtext.casino.dsl"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

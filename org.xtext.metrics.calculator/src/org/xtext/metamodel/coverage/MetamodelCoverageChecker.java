@@ -10,8 +10,8 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.EPackage;
-import es.udima.cesarlaso.tfm.*;
-import es.udima.tfm.cesarlaso.IotDslStandaloneSetup;
+import org.xtext.casino.dsl.*;
+//import es.udima.tfm.cesarlaso.IotDslStandaloneSetup;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
@@ -24,14 +24,14 @@ import org.xtext.complementary.helper.*;
 
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
-		String repoPath = "E:\\xtext_repos_clone_new\\cesarlaso_tfm-udima-arquitectura-del-software-dsl-ecore-xtext-emf";
+		String repoPath = "E:\\xtext_repos_clone_new\\casino-mdd_DSL";
 		String[] ecoreExtensions = {"ecore"};
 		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtensions(repoPath, ecoreExtensions);
 		
 		String[] xtextExtensions = {"xtext"};
 		List<String> listXtextFiles = FileHelper.listFileNamesWithExtensions(repoPath, xtextExtensions);
 		
-		String[] insExtensions = {"iotproyect","iotproyect2"};
+		String[] insExtensions = {"dsl"};
 		List<String> listInstances = FileHelper.listFileNamesWithExtensions(repoPath, insExtensions);
 
 		int iTotalCntClasses = 0;
@@ -60,6 +60,7 @@ public class MetamodelCoverageChecker {
         
         System.out.printf("Total count of grammar rules in the xtext files is: %d\n", iTotalCntRules);
         
+        int iTotalCntTypes = 0;
         // get object types from the instances
         for (int i = 0; i < listInstances.size(); i++) {
         	String fileName = "types_in_" 
@@ -67,13 +68,15 @@ public class MetamodelCoverageChecker {
         			+ "_" 
         			+ String.valueOf(i) 
         			+ ".txt";
-        	//getTypesFromSingleIns(listInstances.get(i), fileName);
+        	iTotalCntTypes += getTypesFromSingleIns(listInstances.get(i), fileName);
         }
+        
+        System.out.printf("Total count of types of objects in instances is: %d\n", iTotalCntTypes);
     }
 	
-	public static void getTypesFromSingleIns(String dslFilePath, String saveFileName) {
+	public static int getTypesFromSingleIns(String dslFilePath, String saveFileName) {
 		// 1. 使用Xtext生成的Injector解析DSL文件
-        IotDslStandaloneSetup.doSetup();
+        DslStandaloneSetup.doSetup();
         XtextResourceSet resourceSet = new XtextResourceSet();
         
 		// 2. 加载DSL文件
@@ -104,13 +107,15 @@ public class MetamodelCoverageChecker {
         }
         
         WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, saveFileName);
+        
+        return uniqueTypeNames.size();
 	}
 	
 	public static int getRuleNamesFromSingleGrammar(String xtextFilePath, String saveFileName) {
 		String strRaw = FileHelper.readFileContent(xtextFilePath);
-		Set<String> uniqueTypeNames = GrammarHelper.getAllGrammarRuleNames(strRaw);
+		List<String> uniqueTypeNames = GrammarHelper.getAllGrammarRuleNames(strRaw);
 //		System.out.printf("Count of found grammar rules: %d\n", uniqueTypeNames.size());
-		WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, saveFileName);
+		WriteToFile.appendListToFile(uniqueTypeNames, saveFileName);
 		return uniqueTypeNames.size();
 	}
 	
