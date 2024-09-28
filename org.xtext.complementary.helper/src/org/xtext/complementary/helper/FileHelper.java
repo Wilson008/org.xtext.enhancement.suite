@@ -14,7 +14,7 @@ public class FileHelper {
      * @param extensions 文件扩展名数组
      * @param files 存储符合条件的文件列表
      */
-    public static void listFilesWithExtensions(File dir, String[] extensions, List<File> files) {
+    public static void listFilesWithExtension(File dir, String extension, List<File> files) {
         if (!dir.isDirectory()) {
             return;
         }
@@ -25,14 +25,11 @@ public class FileHelper {
             for (File file : fileList) {
                 if (file.isDirectory()) {
                     // 如果是文件夹，递归查找
-                    listFilesWithExtensions(file, extensions, files);
+                    listFilesWithExtension(file, extension, files);
                 } else {
                     // 检查文件的扩展名
-                    for (String ext : extensions) {
-                        if (file.getName().toLowerCase().endsWith(ext.toLowerCase())) {
-                            files.add(file);
-                            break;
-                        }
+                	if (file.getName().toLowerCase().endsWith(extension.toLowerCase())) {
+                        files.add(file);
                     }
                 }
             }
@@ -45,13 +42,13 @@ public class FileHelper {
      * @param extensions 文件扩展名数组
      * @param files 存储符合条件的文件列表
      */
-	public static List<String> listFileNamesWithExtensions(String dir, String[] extensions) {
+	public static List<String> listFileNamesWithExtension(String dir, String extension) {
     	List<String> listFileNames = new ArrayList<>();  // 初始化为空的列表
     	if (dir == null || dir.isBlank())
     		return listFileNames;
     	
     	List<File> files = new ArrayList<>();
-        listFilesWithExtensions(new File(dir), extensions, files);
+        listFilesWithExtension(new File(dir), extension, files);
         
         System.out.println("Found files: ");
         // 输出所有符合条件的文件的绝对路径

@@ -10,7 +10,8 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.EPackage;
-import org.xtext.casino.dsl.*;
+//import org.xtext.casino.dsl.*;
+import org.unb.grupo10.oberon.*;
 //import es.udima.tfm.cesarlaso.IotDslStandaloneSetup;
 import java.io.IOException;
 import java.util.Iterator;
@@ -24,15 +25,12 @@ import org.xtext.complementary.helper.*;
 
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
-		String repoPath = "E:\\xtext_repos_clone_new\\casino-mdd_DSL";
-		String[] ecoreExtensions = {"ecore"};
-		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtensions(repoPath, ecoreExtensions);
+		String repoPath = "E:\\xtext_repos_clone_new\\UnBCIC-TP2_Oberon-XText";
+
+		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtension(repoPath, "ecore");
+		List<String> listXtextFiles = FileHelper.listFileNamesWithExtension(repoPath, "xtext");
 		
-		String[] xtextExtensions = {"xtext"};
-		List<String> listXtextFiles = FileHelper.listFileNamesWithExtensions(repoPath, xtextExtensions);
-		
-		String[] insExtensions = {"dsl"};
-		List<String> listInstances = FileHelper.listFileNamesWithExtensions(repoPath, insExtensions);
+		String[] insExtensions = {"oberon"};
 
 		int iTotalCntClasses = 0;
         // get class names from the metamodels
@@ -60,23 +58,33 @@ public class MetamodelCoverageChecker {
         
         System.out.printf("Total count of grammar rules in the xtext files is: %d\n", iTotalCntRules);
         
-        int iTotalCntTypes = 0;
-        // get object types from the instances
-        for (int i = 0; i < listInstances.size(); i++) {
-        	String fileName = "types_in_" 
-        			+ FileHelper.getFileNameWithExtension(listInstances.get(i))
-        			+ "_" 
-        			+ String.valueOf(i) 
-        			+ ".txt";
-        	iTotalCntTypes += getTypesFromSingleIns(listInstances.get(i), fileName);
-        }
-        
-        System.out.printf("Total count of types of objects in instances is: %d\n", iTotalCntTypes);
+        // get types of objects in instances
+        getTypesFromInstances(repoPath, insExtensions);
     }
 	
-	public static int getTypesFromSingleIns(String dslFilePath, String saveFileName) {
+	public static void getTypesFromInstances(String repoPath, String[] insExtensions) {
+		for (int j = 0; j < insExtensions.length; j++) {
+			List<String> listInstances = FileHelper.listFileNamesWithExtension(repoPath, insExtensions[j]);
+			
+//	        int iTotalCntTypes = 0;
+	        Set<String> uniqueTypeNames = new HashSet<>();
+	        // get object types from the instances
+	        for (int i = 0; i < listInstances.size(); i++) {
+	        	String fileName = "types_in_" 
+	        			+ FileHelper.getFileNameWithExtension(listInstances.get(i))
+	        			+ "_" 
+	        			+ String.valueOf(i) 
+	        			+ ".txt";
+	        	getTypesFromSingleIns(listInstances.get(i), fileName, uniqueTypeNames);
+	        }
+	        
+	        System.out.printf("Total count of types in instances with extension %s is: %d.\n", insExtensions[j], uniqueTypeNames.size());
+		}
+	}
+	
+	public static void getTypesFromSingleIns(String dslFilePath, String saveFileName, Set<String> uniqueTypeNames) {
 		// 1. 使用Xtext生成的Injector解析DSL文件
-        DslStandaloneSetup.doSetup();
+		OberonStandaloneSetup.doSetup();
         XtextResourceSet resourceSet = new XtextResourceSet();
         
 		// 2. 加载DSL文件
@@ -85,7 +93,7 @@ public class MetamodelCoverageChecker {
         
 //		System.out.println("Instance types");
         // 存储唯一的EClass名
-        Set<String> uniqueTypeNames = new HashSet<>();
+//        Set<String> uniqueTypeNames = new HashSet<>();
         EClass rootEClass = dslModel.eClass();
         uniqueTypeNames.add(rootEClass.getName());
         for (Iterator<EObject> it = dslModel.eAllContents(); it.hasNext(); ) {
@@ -108,7 +116,7 @@ public class MetamodelCoverageChecker {
         
         WriteToFile.appendUniqueNamesToFile(uniqueTypeNames, saveFileName);
         
-        return uniqueTypeNames.size();
+//        return uniqueTypeNames;
 	}
 	
 	public static int getRuleNamesFromSingleGrammar(String xtextFilePath, String saveFileName) {
