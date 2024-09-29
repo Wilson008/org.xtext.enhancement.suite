@@ -94,6 +94,7 @@ public class GrammarHelper {
         // ('\\w+')?: 匹配可能存在的关键字，单引号中的关键字，可能不存在
         // [\\+\\w]+=\\w+: 匹配类似 name=ID 的格式，考虑 + 号的情况
         String regex = "(\\w+\\s*:\\s*)(('\\w+')?\\s+\\w+?=\\w+.*)";
+//    	String regex = "(\\w+\\s*:\\s*)(({\\w+})?\\s*('\\w+')?\\s+\\w+?=\\w+.*)";
         
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(line);

@@ -118,4 +118,28 @@ public class FileHelper {
             return path.substring(path.lastIndexOf('\\') + 1);
         }
     }
+    
+    public static boolean isItBinFile(String fileName) {
+		if (fileName == null)
+			return false;
+		
+		// 检查路径中是否包含 'bin' 文件夹
+        if (fileName.contains("\\bin\\")) {
+        	return true;
+        } else {
+        	return false;
+        }
+	}
+    
+    public static boolean isItSrcGenFile(String fileName) {
+    	if (fileName == null)
+			return false;
+		
+		// 检查路径中是否包含 'bin' 文件夹
+        if (fileName.contains("\\src-gen\\")) {
+        	return true;
+        } else {
+        	return false;
+        }
+    }
 }

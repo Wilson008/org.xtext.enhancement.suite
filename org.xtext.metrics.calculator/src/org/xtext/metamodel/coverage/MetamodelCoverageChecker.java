@@ -10,10 +10,8 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.EPackage;
-//import org.xtext.casino.dsl.*;
-//import org.unb.grupo10.oberon.*;
-//import uclid.xtext.*;
-//import es.udima.tfm.cesarlaso.IotDslStandaloneSetup;
+//import ck2xtext.common.Ck2TerminalsStandaloneSetup;
+//import ck2xtext.generic.Ck2StandaloneSetup;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
@@ -26,16 +24,19 @@ import org.xtext.complementary.helper.*;
 
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
-		String repoPath = "E:\\xtext_repos_clone_new\\eclipse_xsemantics";
+		String repoPath = "E:\\xtext_repos_clone_new\\rquinio_ck2xtext";
 
 		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtension(repoPath, "ecore");
 		List<String> listXtextFiles = FileHelper.listFileNamesWithExtension(repoPath, "xtext");
 		
-		String[] insExtensions = {"ucl","uclid"};
+		String[] insExtensions = {"gfx"};
 
 		int iTotalCntClasses = 0;
         // get class names from the metamodels
-        for (int i = 0; i < listEcoreFiles.size(); i++) {       	
+        for (int i = 0; i < listEcoreFiles.size(); i++) {
+        	if (FileHelper.isItBinFile(listEcoreFiles.get(i)) || FileHelper.isItSrcGenFile(listEcoreFiles.get(i)))
+        		continue;
+        	
         	String fileName = "classes_in_" 
         			+ FileHelper.getFileNameWithExtension(listEcoreFiles.get(i))
         			+ "_" 
@@ -64,22 +65,8 @@ public class MetamodelCoverageChecker {
         System.out.printf("Total count of grammar rules in the xtext files is: %d\n", iTotalCntRules);
         
         // get types of objects in instances
-        //getTypesFromInstances(repoPath, insExtensions);
+        getTypesFromInstances(repoPath, insExtensions);
     }
-	
-	public static boolean isItBinFile(String fileName) {
-		if (fileName == null)
-			return false;
-		
-		// 检查路径中是否包含 'bin' 文件夹
-        if (fileName.contains("\\bin\\")) {
-//            System.out.println("路径中包含 'bin' 文件夹。");
-        	return true;
-        } else {
-//            System.out.println("路径中不包含 'bin' 文件夹。");
-        	return false;
-        }
-	}
 	
 	public static void getTypesFromInstances(String repoPath, String[] insExtensions) {
 		for (int j = 0; j < insExtensions.length; j++) {
@@ -103,7 +90,7 @@ public class MetamodelCoverageChecker {
 	
 	public static void getTypesFromSingleIns(String dslFilePath, String saveFileName, Set<String> uniqueTypeNames) {
 		// 1. 使用Xtext生成的Injector解析DSL文件
-//		UclidStandaloneSetup.doSetup();
+//		Ck2StandaloneSetup.doSetup();
         XtextResourceSet resourceSet = new XtextResourceSet();
         
 		// 2. 加载DSL文件
