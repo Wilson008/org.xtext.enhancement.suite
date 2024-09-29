@@ -90,4 +90,32 @@ public class FileHelper {
         }
         return strRaw;
     }
+    
+    // 定义函数，根据传入的单个路径进行检查，并在 paths 列表中搜索同名文件
+    public static boolean checkForSameFileWithoutBin(String path, List<String> paths) {
+        // 检查路径是否包含文件夹 "bin"
+        if (path.contains("/bin/") || path.contains("\\bin\\")) {
+            // 提取文件名（含扩展名）
+            String fileName = getFileNameFromPath(path);
+
+            // 遍历 paths 列表，检查是否存在同名文件且路径不含 "bin"
+            for (String otherPath : paths) {
+                if (!otherPath.contains("/bin/") && !otherPath.contains("\\bin\\") 
+                    && getFileNameFromPath(otherPath).equals(fileName)) {
+                    return true;  // 找到符合条件的同名文件，返回 true
+                }
+            }
+        }
+        return false;  // 如果没有找到符合条件的文件，返回 false
+    }
+
+    // 辅助函数，用于从路径中提取文件名
+    private static String getFileNameFromPath(String path) {
+        // 根据路径分隔符提取最后一个部分，即文件名
+        if (path.contains("/")) {
+            return path.substring(path.lastIndexOf('/') + 1);
+        } else {
+            return path.substring(path.lastIndexOf('\\') + 1);
+        }
+    }
 }

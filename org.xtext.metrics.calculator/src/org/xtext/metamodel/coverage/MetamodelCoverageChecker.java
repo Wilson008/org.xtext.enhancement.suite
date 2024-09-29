@@ -11,7 +11,8 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.EPackage;
 //import org.xtext.casino.dsl.*;
-import org.unb.grupo10.oberon.*;
+//import org.unb.grupo10.oberon.*;
+//import uclid.xtext.*;
 //import es.udima.tfm.cesarlaso.IotDslStandaloneSetup;
 import java.io.IOException;
 import java.util.Iterator;
@@ -25,12 +26,12 @@ import org.xtext.complementary.helper.*;
 
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
-		String repoPath = "E:\\xtext_repos_clone_new\\UnBCIC-TP2_Oberon-XText";
+		String repoPath = "E:\\xtext_repos_clone_new\\eclipse_xsemantics";
 
 		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtension(repoPath, "ecore");
 		List<String> listXtextFiles = FileHelper.listFileNamesWithExtension(repoPath, "xtext");
 		
-		String[] insExtensions = {"oberon"};
+		String[] insExtensions = {"ucl","uclid"};
 
 		int iTotalCntClasses = 0;
         // get class names from the metamodels
@@ -48,6 +49,10 @@ public class MetamodelCoverageChecker {
         int iTotalCntRules = 0;
         // get grammar rule names from the grammars
         for (int i = 0; i < listXtextFiles.size(); i++) {
+
+        	if (FileHelper.checkForSameFileWithoutBin(listXtextFiles.get(i), listXtextFiles))
+        		continue;
+        	
         	String fileName = "grammar_rules_in_" 
         			+ FileHelper.getFileNameWithExtension(listXtextFiles.get(i))
         			+ "_" 
@@ -59,8 +64,22 @@ public class MetamodelCoverageChecker {
         System.out.printf("Total count of grammar rules in the xtext files is: %d\n", iTotalCntRules);
         
         // get types of objects in instances
-        getTypesFromInstances(repoPath, insExtensions);
+        //getTypesFromInstances(repoPath, insExtensions);
     }
+	
+	public static boolean isItBinFile(String fileName) {
+		if (fileName == null)
+			return false;
+		
+		// 检查路径中是否包含 'bin' 文件夹
+        if (fileName.contains("\\bin\\")) {
+//            System.out.println("路径中包含 'bin' 文件夹。");
+        	return true;
+        } else {
+//            System.out.println("路径中不包含 'bin' 文件夹。");
+        	return false;
+        }
+	}
 	
 	public static void getTypesFromInstances(String repoPath, String[] insExtensions) {
 		for (int j = 0; j < insExtensions.length; j++) {
@@ -84,7 +103,7 @@ public class MetamodelCoverageChecker {
 	
 	public static void getTypesFromSingleIns(String dslFilePath, String saveFileName, Set<String> uniqueTypeNames) {
 		// 1. 使用Xtext生成的Injector解析DSL文件
-		OberonStandaloneSetup.doSetup();
+//		UclidStandaloneSetup.doSetup();
         XtextResourceSet resourceSet = new XtextResourceSet();
         
 		// 2. 加载DSL文件
