@@ -19,9 +19,9 @@ public class GrammarHelper {
 		
 		if (grammar.getRules().size() > 0) {
 //			System.out.println("Succesfully get all grammar rules!");
-//			System.out.printf("Found rules: %d\n", grammar.getRules().size());
+			System.out.printf("Found rules: %d\n", grammar.getRules().size());
 			for (int i = 0; i < grammar.getRules().size(); i++) {
-//				System.out.println(grammar.getRules().get(i).getName());
+				System.out.println(grammar.getRules().get(i).getName());
 				if (grammar.getRules().get(i).getName() != null && !grammar.getRules().get(i).getName().isEmpty()) {
 					
 					uniqueTypeNames.add(grammar.getRules().get(i).getName());

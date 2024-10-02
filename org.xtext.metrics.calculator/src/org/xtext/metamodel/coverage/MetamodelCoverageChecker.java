@@ -24,7 +24,7 @@ import org.xtext.complementary.helper.*;
 
 public class MetamodelCoverageChecker {
 	public static void main(String[] args) {
-		String repoPath = "E:\\xtext_repos_clone_new\\rquinio_ck2xtext";
+		String repoPath = "E:\\xtext_repos_clone_new\\PAMunb_MetaCrySL";
 
 		List<String> listEcoreFiles = FileHelper.listFileNamesWithExtension(repoPath, "ecore");
 		List<String> listXtextFiles = FileHelper.listFileNamesWithExtension(repoPath, "xtext");
@@ -65,7 +65,7 @@ public class MetamodelCoverageChecker {
         System.out.printf("Total count of grammar rules in the xtext files is: %d\n", iTotalCntRules);
         
         // get types of objects in instances
-        getTypesFromInstances(repoPath, insExtensions);
+//        getTypesFromInstances(repoPath, insExtensions);
     }
 	
 	public static void getTypesFromInstances(String repoPath, String[] insExtensions) {
@@ -127,6 +127,7 @@ public class MetamodelCoverageChecker {
 	
 	public static int getRuleNamesFromSingleGrammar(String xtextFilePath, String saveFileName) {
 		String strRaw = FileHelper.readFileContent(xtextFilePath);
+		strRaw = StringHelper.removeComments(strRaw);
 		List<String> uniqueTypeNames = GrammarHelper.getAllGrammarRuleNames(strRaw);
 //		System.out.printf("Count of found grammar rules: %d\n", uniqueTypeNames.size());
 		WriteToFile.appendListToFile(uniqueTypeNames, saveFileName);
